@@ -49,7 +49,10 @@ public class A4Q4 {
 
         //find if you will break even when tcikets cost $35
         double tickets = cost / 35;
+        
+        tickets = Math.ceil(tickets);
 
+        
         //State how many tickets they would need to sell to break even
         System.out.println("The total cost is $" + cost + ". You will need to sell " + tickets + " tickets to break even.");
     }
