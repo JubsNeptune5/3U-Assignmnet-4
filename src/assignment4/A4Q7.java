@@ -25,14 +25,18 @@ public class A4Q7 {
             //Ask to enter dice
             System.out.println("Enter sum of dice:");
             int dice = input.nextInt();
-            
+
             //Make sure the dice value is between 2 and 12
-            if( dice >=2){
-                if(dice>=12){
-                   
+            if (dice >= 2) {
+                if (dice <= 12) {
+                int spot = 1 + dice;
+                    System.out.println("You are now on square " +spot);
                 }
-                break;
-            }
+            }else{
+            System.out.println("You need to use legitimate dice");}
+            if (dice == 0) {
+                System.out.println("You choose to quio the game");
+            } 
         }
     }
 }
