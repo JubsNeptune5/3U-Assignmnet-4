@@ -35,7 +35,7 @@ public class A4Q7 {
             }else{
             System.out.println("You need to use legitimate dice");}
             if (dice == 0) {
-                System.out.println("You choose to quio the game");
+                System.out.println("You choose to quit the game");
             } 
         }
     }
