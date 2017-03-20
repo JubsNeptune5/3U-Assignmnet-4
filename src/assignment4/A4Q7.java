@@ -29,11 +29,33 @@ public class A4Q7 {
             //Make sure the dice value is between 2 and 12
             if (dice >= 2) {
                 if (dice <= 12) {
+                    
                 int spot = 1 + dice;
+                
+                //if marker lands on a ladder
+                if (spot == 9){
+                    spot = 34;
+                }
+                if(spot ==40){
+                    spot = 64;
+                }
+                if(spot == 67){
+                    spot = 86;
+                }
+                
+                //if land on snakes 
+                if (spot == 99){
+                    spot = 77;
+                }
+                if ( spot == 90){
+                    spot = 48;
+                }
+                if (spot == 54){
+                    spot = 19;
+                }
                     System.out.println("You are now on square " +spot);
                 }
-            }else{
-            System.out.println("You need to use legitimate dice");}
+            }
             if (dice == 0) {
                 System.out.println("You choose to quit the game");
             } 
