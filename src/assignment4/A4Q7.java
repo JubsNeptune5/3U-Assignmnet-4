@@ -17,7 +17,8 @@ public class A4Q7 {
      */
     public static void main(String[] args) {
 
-        while (true) {
+            
+            for(int x=1; x<100; x=x+1){
 
             // Scanner to get input
             Scanner input = new Scanner(System.in);
@@ -26,6 +27,10 @@ public class A4Q7 {
             System.out.println("Enter sum of dice:");
             int dice = input.nextInt();
 
+            if (dice == 0) {
+                System.out.println("You choose to quit the game");
+             break;
+            } 
             //Make sure the dice value is between 2 and 12
             if (dice >= 2) {
                 if (dice <= 12) {
@@ -53,12 +58,12 @@ public class A4Q7 {
                 if (spot == 54){
                     spot = 19;
                 }
+                if (spot < 100){
                     System.out.println("You are now on square " +spot);
                 }
+                }
             }
-            if (dice == 0) {
-                System.out.println("You choose to quit the game");
             } 
         }
     }
-}
+
