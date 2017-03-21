@@ -5,6 +5,7 @@
 package assignment4;
 
 /**
+ * Create a program for simple math
  *
  * @author laveh2107
  */
@@ -36,7 +37,7 @@ public class A4Q9 extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         firstNumberInput = new javax.swing.JTextField();
         secondNumberInput = new javax.swing.JTextField();
-        result = new javax.swing.JTextField();
+        output = new javax.swing.JTextField();
 
         jLabel2.setText("jLabel2");
 
@@ -76,7 +77,7 @@ public class A4Q9 extends javax.swing.JFrame {
             }
         });
 
-        result.setEditable(false);
+        output.setEditable(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,7 +93,7 @@ public class A4Q9 extends javax.swing.JFrame {
                             .addComponent(jLabel4))
                         .addGap(70, 70, 70)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(result, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
+                            .addComponent(output, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
                             .addComponent(secondNumberInput)
                             .addComponent(firstNumberInput)))
                     .addGroup(layout.createSequentialGroup()
@@ -120,7 +121,7 @@ public class A4Q9 extends javax.swing.JFrame {
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(result, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(output, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -134,21 +135,63 @@ public class A4Q9 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        //Subtracting
+
         String first = firstNumberInput.getText();
         String second = secondNumberInput.getText();
-        
+        //Create varibales from text feilds
+        double fn = Integer.parseInt(first);
+        double sn = Integer.parseInt(second);
+        //Subrate fn from sn
+        double result = fn - sn;
+
+        //say answer 
+        output.setText("" + result);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        //addition
+
+        String first = firstNumberInput.getText();
+        String second = secondNumberInput.getText();
+        //Create varibales from text feilds
+        double fn = Integer.parseInt(first);
+        double sn = Integer.parseInt(second);
+        //Add fn to sn
+        double result = fn + sn;
+
+        //say answer 
+        output.setText("" + result);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        //multiplication
+
+        String first = firstNumberInput.getText();
+        String second = secondNumberInput.getText();
+        //Create varibales from text feilds
+        double fn = Integer.parseInt(first);
+        double sn = Integer.parseInt(second);
+        //multiply fn by sn
+        double result = fn * sn;
+
+        //say answer 
+        output.setText("" + result);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        //division
+
+        String first = firstNumberInput.getText();
+        String second = secondNumberInput.getText();
+        //Create varibales from text feilds
+        double fn = Integer.parseInt(first);
+        double sn = Integer.parseInt(second);
+        //divide fn by sn
+        double result = fn / sn;
+
+        //say answer 
+        output.setText("" + result);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -195,7 +238,7 @@ public class A4Q9 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField result;
+    private javax.swing.JTextField output;
     private javax.swing.JTextField secondNumberInput;
     // End of variables declaration//GEN-END:variables
 }
