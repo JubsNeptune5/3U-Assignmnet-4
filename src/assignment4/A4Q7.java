@@ -7,7 +7,7 @@ package assignment4;
 import java.util.Scanner;
 
 /**
- *
+ * Create a snake and ladders game
  * @author laveh2107
  */
 public class A4Q7 {
