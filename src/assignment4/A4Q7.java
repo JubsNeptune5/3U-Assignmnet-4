@@ -27,7 +27,7 @@ public class A4Q7 {
         int x = 0;
         //Ask to enter dice
         System.out.println("Welcome to Snakes and Latters!!!!");
-        while (p < 100) {
+       while(p<100) {
             //Tell person to enter dice
             System.out.println("Enter sum of dice:");
             int dice = input.nextInt();
@@ -76,7 +76,7 @@ public class A4Q7 {
             }
             //if the player doesn't finish the game
             if (p < 100) {
-                System.out.println("You are now on square " + p);
+                System.out.println("You are now on square: " + p);
             }
             //Iff score is above or exactly 100, say they won
             if (p >= 100) {
