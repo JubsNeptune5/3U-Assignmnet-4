@@ -79,7 +79,7 @@ public class A4Q5 {
         double score5 = mark5/test5;
         
         //find the average score
-        double scoreA = (score1 + score2 + score3 + score4 + score5)/5;
+        double scoreA = (score1*100 + score2*100 + score3*100 + score4*100 + score5*100)/5;
         
         //State score of test
         System.out.println("Test score for " + name);

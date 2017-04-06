@@ -20,7 +20,7 @@ public class A4Q3 {
         Scanner input = new Scanner(System.in);
         
         //ask user to type in numbers on different line
-        System.out.println("Please enter your four numbers and hit space after you typed one in");    
+        System.out.println("Please enter your four numbers and hit enter/return after you typed one in");    
         
         //Give each line with new variable
         double line1 = input.nextDouble();

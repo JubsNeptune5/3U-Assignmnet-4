@@ -7,7 +7,7 @@ package assignment4;
 import java.util.Scanner;
 
 /**
- * Covert inches to metres
+ * Covert inches to centimetres
  *
  * @author laveh2107
  */
