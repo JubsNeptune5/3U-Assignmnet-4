@@ -72,22 +72,22 @@ public class A4Q5 {
         System.out.println("");
         
         //find scores for tests
-        double score1 = mark1/test1;
-        double score2 = mark2/test2;
-        double score3 = mark3/test3;
-        double score4 = mark4/test4;
-        double score5 = mark5/test5;
+        double score1 = test1/mark1;
+        double score2 = test2/mark2;
+        double score3 = test3/mark3;
+        double score4 = test4/mark4;
+        double score5 = test5/mark5;
         
         //find the average score
         double scoreA = (score1*100 + score2*100 + score3*100 + score4*100 + score5*100)/5;
         
         //State score of test
         System.out.println("Test score for " + name);
-        System.out.println("Test 1: " + score1 + "%");
-        System.out.println("Test 2: " + score2 + "%");
-        System.out.println("Test 3: " + score3 + "%");
-        System.out.println("Test 4: " + score4 + "%");
-        System.out.println("Test 5: " + score5 + "%");
+        System.out.println("Test 1: " + score1*100 + "%");
+        System.out.println("Test 2: " + score2*100 + "%");
+        System.out.println("Test 3: " + score3*100 + "%");
+        System.out.println("Test 4: " + score4*100 + "%");
+        System.out.println("Test 5: " + score5*100 + "%");
         System.out.println("");
         System.out.println("Average: " + scoreA + "%");
        
